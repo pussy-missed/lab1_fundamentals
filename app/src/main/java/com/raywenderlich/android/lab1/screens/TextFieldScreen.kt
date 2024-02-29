@@ -41,7 +41,7 @@ fun MyTextField() {
     val primaryColor = colorResource(id = R.color.purple_500)
 
     OutlinedTextField(
-        label = { Text(text = stringResource(id = R.string.insert_text))},
+        label = { Text(text = stringResource(id = R.string.insert_email))},
         colors = TextFieldDefaults.outlinedTextFieldColors(
             focusedBorderColor = primaryColor,
             focusedLabelColor = primaryColor,
