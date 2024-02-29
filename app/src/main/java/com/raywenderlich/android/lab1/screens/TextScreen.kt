@@ -6,6 +6,7 @@ import androidx.compose.foundation.layout.fillMaxSize
 import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
+import androidx.compose.ui.res.stringResource
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
@@ -27,5 +28,8 @@ fun TextScreen() {
 
 @Composable
 fun MyText() {
-    //TODO add your code here
+    Text (
+        text = stringResource(id = R.string.set_text)
+
+    )
 }
