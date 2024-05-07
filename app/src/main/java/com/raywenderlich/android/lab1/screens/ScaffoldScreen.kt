@@ -1,8 +1,13 @@
+
 import android.annotation.SuppressLint
 import androidx.compose.material.*
+import androidx.compose.material.icons.Icons
+import androidx.compose.material.icons.filled.Menu
 import androidx.compose.runtime.Composable
 import androidx.compose.runtime.rememberCoroutineScope
+import androidx.compose.ui.graphics.Color
 import androidx.compose.ui.res.colorResource
+import androidx.compose.ui.res.stringResource
 import com.raywenderlich.android.lab1.R
 import com.raywenderlich.android.lab1.router.BackButtonHandler
 import com.raywenderlich.android.lab1.router.FundamentalsRouter
@@ -10,10 +15,6 @@ import com.raywenderlich.android.lab1.router.Screen
 import com.raywenderlich.android.lab1.screens.MyColumn
 import com.raywenderlich.android.lab1.screens.MyRow
 import kotlinx.coroutines.CoroutineScope
-import androidx.compose.material.icons.Icons
-import androidx.compose.material.icons.filled.Menu
-import androidx.compose.ui.graphics.Color
-import androidx.compose.ui.res.stringResource
 import kotlinx.coroutines.launch
 
 
@@ -40,7 +41,6 @@ fun MyScaffold(){
         topBar = { MyTopAppBar(scaffoldState = scaffoldState, scope = scope) },
         bottomBar = { MyBottomAppBar()},
         drawerContent = { MyColumn()}
-
 
     )
 
