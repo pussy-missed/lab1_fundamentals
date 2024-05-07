@@ -16,6 +16,7 @@ sealed class Screen {
     object ProgressIndicator : Screen()
     object AlertDialog : Screen()
 
+    object Box : Screen()
     object  Scaffold : Screen()
     object Surface : Screen()
 }
