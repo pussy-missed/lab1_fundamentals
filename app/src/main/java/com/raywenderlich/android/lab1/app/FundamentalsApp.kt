@@ -9,9 +9,11 @@ import com.raywenderlich.android.lab1.router.FundamentalsRouter
 import com.raywenderlich.android.lab1.router.Screen
 import com.raywenderlich.android.lab1.screens.AlertDialogScreen
 import com.raywenderlich.android.lab1.screens.BoxScreen
+import com.raywenderlich.android.lab1.screens.ColumnScreen
 import com.raywenderlich.android.lab1.screens.ExploreButtonsScreen
 import com.raywenderlich.android.lab1.screens.NavigationScreen
 import com.raywenderlich.android.lab1.screens.ProgressIndicatorScreen
+import com.raywenderlich.android.lab1.screens.RowScreen
 import com.raywenderlich.android.lab1.screens.SurfaceScreen
 import com.raywenderlich.android.lab1.screens.TextFieldScreen
 import com.raywenderlich.android.lab1.screens.TextScreen
@@ -30,6 +32,8 @@ fun FundamentalsApp() {
                 is Screen.Surface -> SurfaceScreen()
                 is Screen.Scaffold -> ScaffoldScreen()
                 is Screen.Box -> BoxScreen()
+                is Screen.Column -> ColumnScreen()
+                is Screen.Row -> RowScreen()
             }
         }
     }
