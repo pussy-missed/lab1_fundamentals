@@ -9,7 +9,7 @@ import com.raywenderlich.android.lab1.router.Screen
 val THREE_ELEMENT_LIST = listOf(R.string.first, R.string.second, R.string.third)
 
 @Composable
-fun RowScreen(){
+fun RowScreen() {
     MyRow()
 
     BackButtonHandler {
@@ -18,6 +18,6 @@ fun RowScreen(){
 }
 
 @Composable
-fun MyRow(){
+fun MyRow() {
     //TODO write your code here
 }
