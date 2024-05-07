@@ -11,9 +11,12 @@ import com.raywenderlich.android.lab1.screens.AlertDialogScreen
 import com.raywenderlich.android.lab1.screens.BoxScreen
 import com.raywenderlich.android.lab1.screens.ColumnScreen
 import com.raywenderlich.android.lab1.screens.ExploreButtonsScreen
+import com.raywenderlich.android.lab1.screens.GridScreen
+import com.raywenderlich.android.lab1.screens.ListScreen
 import com.raywenderlich.android.lab1.screens.NavigationScreen
 import com.raywenderlich.android.lab1.screens.ProgressIndicatorScreen
 import com.raywenderlich.android.lab1.screens.RowScreen
+import com.raywenderlich.android.lab1.screens.ScrollingScreen
 import com.raywenderlich.android.lab1.screens.SurfaceScreen
 import com.raywenderlich.android.lab1.screens.TextFieldScreen
 import com.raywenderlich.android.lab1.screens.TextScreen
@@ -34,6 +37,9 @@ fun FundamentalsApp() {
                 is Screen.Box -> BoxScreen()
                 is Screen.Column -> ColumnScreen()
                 is Screen.Row -> RowScreen()
+                is Screen.Scrolling -> ScrollingScreen()
+                is Screen.List -> ListScreen()
+                is Screen.Grid -> GridScreen()
             }
         }
     }
